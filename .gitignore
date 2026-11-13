@@ -1,0 +1,130 @@
+# ========================================================
+# 1. Qt Creator & Build Systems (CMake / QMake)
+# ========================================================
+# User-specific IDE settings (NEVER commit these)
+*.pro.user*
+*.qbs.user*
+CMakeLists.txt.user*
+
+# Shadow build directories (if placed inside the repo)
+build/
+build-*/
+cmake-build-*/
+out/
+
+# Qt Auto-generated files (MOC, UIC, RCC)
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.moc
+
+# QMake specific
+Makefile*
+.qmake.stash
+.qmake.cache
+object_script.*
+
+# CMake specific
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Qt Creator temporary files
+*.autosave
+*.qmlproject.user*
+.qmlls.ini
+
+# ========================================================
+# 2. C++ Compilation Artifacts
+# ========================================================
+# Object files
+*.o
+*.obj
+*.lo
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries (Static and Dynamic)
+*.lib
+*.a
+*.la
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug information
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.ilk
+*.map
+*.exp
+
+# ========================================================
+# 3. Game Development Specifics
+# ========================================================
+# Logs and Crash Dumps
+*.log
+*.dmp
+*.mdmp
+crash_report/
+
+# Local Game Saves & User Configs (generated while testing)
+saves/
+*.sav
+user_settings.ini
+config_local.json
+imgui.ini
+
+# Compiled Shaders (if compiled at build/runtime, e.g., Vulkan SPIR-V)
+*.spv
+*.cso
+shader_cache/
+
+# Graphics Debugging (RenderDoc, PIX, NVIDIA Nsight)
+*.rdc
+*.wpix
+*.nv-gpudmp
+
+# Steamworks / Storefront SDKs (generated at runtime)
+steam_appid.txt
+
+# ========================================================
+# 4. OS & Other Editors (Just in case)
+# ========================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# Other IDEs (if teammates use VS Code, Visual Studio, or CLion)
+.vscode/
+.vs/
+.idea/
+*.sln
+*.vcxproj*
